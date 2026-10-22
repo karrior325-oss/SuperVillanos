@@ -1,0 +1,25 @@
+{
+  "name": "supervillain-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VillainLair API: supervillanos, guaridas, esbirros y máquinas del juicio final (Express + Mongoose + MongoDB Atlas)",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "start": "node --env-file=.env ./bin/www",
+    "dev": "node --env-file=.env --watch ./bin/www",
+    "seed": "node --env-file=.env scripts/seed.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.22.3",
+    "mongoose": "^9.11.1",
+    "morgan": "^1.12.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.1"
+  }
+}
